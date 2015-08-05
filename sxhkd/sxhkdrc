@@ -119,7 +119,7 @@ super + @button{1-3}
 
 # Capture full screen
 super + p
-	imgur.sh
+	imgur
 
 ##########################
 # Volume
@@ -148,4 +148,4 @@ super + space
 	dmenu_run
 
 super + ctrl + alt + l
-	bash lock.sh
+	bash lock
