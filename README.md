@@ -1,4 +1,4 @@
 # dotfiles
 Config files
 
-Dependencies: zsh, prezto, urxvt, bspwm, scrot, xclip, curl
+Dependencies: zsh, prezto, urxvt, bspwm, scrot, xclip, curl, i3lock
