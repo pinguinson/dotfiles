@@ -3,30 +3,27 @@
 bspc config border_width        	0
 bspc config window_gap				12
 
-bspc config split_ratio         	0.70
+bspc config split_ratio         	0.30
 bspc config focus_follows_pointer 	false
 bspc config borderless_monocle  	true
 bspc config gapless_monocle     	true
 bspc config focus_by_distance   	true
 
-# tabs' icons:	terminal		 sublime		  chrome		   pavucontrol+ts3	steam			 file-manager	   torrents			media
-bspc monitor -d $(echo '\uf120') $(echo '\uf121') $(echo '\uf268') $(echo '\uf028') $(echo '\uf1b6') $(echo '\uf07c')  $(echo '\uf019') $(echo '\uf001')
+bspc monitor -d TERMINALS CODE WEB SOUND GAMES FILES TORRENTS MUSIC MEDIA
 
 bspc rule -a subl3 						desktop=^2
-bspc rule -a chromium 					desktop=^3
+bspc rule -a Google-chrome-stable		desktop=^3
 bspc rule -a pavucontrol 				desktop=^4
 bspc rule -a ts3client_linux_amd64 		desktop=^4
 bspc rule -a Steam 						desktop=^5 follow=no
 bspc rule -a thunar 					floating=on
 bspc rule -a nautilus 					floating=on
 bspc rule -a file-roller 				floating=on
-
+bspc rule -a Skype 						floating=on
 panel &
-compton --backend glx --paint-on-overlay --vsync opengl-swc -c &
+compton --vsync opengl-swc -c &
 
 urxvt &
-chromium &
-steam &
 subl3 &
 pavucontrol &
 teamspeak3 &
