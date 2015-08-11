@@ -161,7 +161,7 @@ super + Return
 	urxvt
 
 super + space
-	dmenu_run
+	dmenu_run -b -fn "Monaco-10:normal" -nb "#252527"
 
 super + ctrl + alt + l
 	bash lock.sh
