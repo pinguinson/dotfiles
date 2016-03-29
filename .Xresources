@@ -1,7 +1,13 @@
-Xft.dpi: 102
+! Xft settings
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
 
 ! URxvt config
 URxvt.font: xft:monaco:size=10
+URxvt.letterSpace: -1
 URxvt.scrollstyle: plain
 URxvt*.transparent: true
 URxvt*.shading: 10
